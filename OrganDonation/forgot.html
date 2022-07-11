@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Page?</title>
+    <link rel="stylesheet" href="forgot.css">
+</head>
+
+<body>
+    <div class="fit">
+        <div class="form" id="header"><br>
+            <h2>Forgot Password</h2><br>
+            <form name="f1" id="f1" action="login1.html" onsubmit="validate();">
+                <label for="name"><b>UserName </b></label>
+                <input type="text" name="username" id="username" pattern="[a-z,A-Z,0-9]{8-16}"
+                    title="username should consist of combination of upper & lower case letters : (min & max range :8-16)"
+                    placeholder="Username" required> <br><br>
+                <label for="name"><b>Email Id </b></label>
+                <input type="text" name="email" id="Email_Id" placeholder="Email Id" required><br>
+                <label for="password"><b>New Password</b></label>
+                <input type="password" name="Password" id="Password" pattern="[a-z,A-Z,0-9]{8-16}"
+                    title="Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)"
+                    placeholder="New Password" required><br>
+                <label for="password"><b>Confirm Password</b></label>
+                <input type="password" name="Password" id="ConfirmPassword" pattern="[a-z,A-Z,0-9]{8,16}"
+                    title="Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)"
+                    placeholder="ConfirmPassword" required><br>
+
+                <button id="submit">
+                    <b>
+                        <font background-color:red>
+                            <center id="submit">Register</center><a href="login1.html"></font>
+                    </b></a>
+                </button><br>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+    function validate() {
+        alert("You are Successfully Registered to the Organ Donation!");
+    }
+</script>
+
+</html>

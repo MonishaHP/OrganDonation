@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <title>Regestration form</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration</div>
+        <form name="myfrom" method="post" onsubmit="validate();" action="login1.html">
+            <div class="user_details">
+                <div class="input_box">
+                    <span class="details">Full Name</span>
+                    <input type="text" id="text" placeholder="Enter your name" required>
+
+                </div>
+                <div class="input_box">
+                    <span class="details">Username</span>
+                    <input type="text" name="username" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="input_box">
+                    <span class="details">Email </span>
+                    <input type="email" name="Email_Id" id="Email_Id" placeholder="Enter your email" required>
+                </div>
+                <div class="input_box">
+                    <span class="details">Phone Number</span>
+                    <input type="tel" id="number" placeholder="10 numbers" maxlength="10" pattern="[0-9]{10}" required>
+                </div>
+                <div class="input_box">
+                    <span class="details">Password</span>
+                    <input type="password" name="Password" id="Password" pattern="[a-z,A-Z,0-9]{8,16}"
+                        title="Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)"
+                        placeholder="Enter password" required>
+                </div>
+                <div class="input_box">
+                    <span class="details">Confirm password</span>
+                    <input type="password" name="ConfirmPassword" id="ConfirmPassword" pattern="[a-z,A-Z,0-9]{8,16}"
+                        title="Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)"
+                        placeholder="Enter password" required>
+                    <span id="message"></span>
+                </div>
+            </div>
+            <div class="gender_details">
+
+                <b>
+                    <p>Gender:</p>
+                    <input type="radio" name="Gender" id="male">Male
+                    <input type="radio" name="Gender" id="female">Female
+                    <input type="radio" name="Gender" id="Gender">Prefer not to say
+                </b>
+            </div>
+            <div class="button" id="btn">
+                <input type="submit" id="submit" value="Register" />
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    function validate() {
+        // var email = document.forms["myform"]["Email_Id"].value;
+
+        // if (email == "") {
+        //     alert("Enter the email");
+        //     return false;
+        // }
+
+        // var at = email.indexOf("@");
+        // var dot = email.lastIndexOf(".");
+        // if (at < 1 || dot < at + 2 || dot + 2 >= email.length) {
+        //     alert("Ivalid Email_Id ");
+        //     return false;
+        // }
+
+        // let password = document.getElementById("Password").value;
+        // let cnfrmPassword = document.getElementById("ConfirmPassword").value;
+        // console.log(password, cnfrmPassword);
+        // let message = document.getElementById("message");
+
+        // if (password.length != 0) {
+        //     if (password == cnfrmPassword) {
+        //         message.textContent = "Password match";
+        //     } else {
+        //         message.textContent = "Password don't match";
+        //     }
+        // }
+        alert("You are Successfully registered to the Organ Donation!");
+
+    }
+
+
+</script>
+
+</html>

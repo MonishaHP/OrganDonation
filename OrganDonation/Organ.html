@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <title>Blood & Ogran Registration Form</title>
+    <link rel="stylesheet" href="blood.css">
+    <style>
+        body {
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDV-jvQwlg6q_jPv0c6twr4rdGOeulEhtMg&usqp=CAU);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <form name="myform" method="post" action="msg.html" onsubmit="return validate();">
+        <h3>REGISTRATION FORM</h3>
+        <table align="center" cellpadding="10">
+            <tr>
+                <td>FIRST NAME</td>
+                <td><input type="text" name="First_Name" id="First_Name" maxlength="30">
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>LAST NAME</td>
+                <td><input type="text" name="Last_Name" id="Last_Name" maxlength="30">
+                    (max 30 characters A-Z and a-z)
+                </td>
+            </tr>
+            <tr>
+                <td>Date of Birth</td>
+                <td><input type="date" name="date" id="date" min="1981-01-01" required />
+                </td>
+            </tr>
+            <tr>
+                <td>EMAIL ID</td>
+                <td><input type="text" name="Email_Id" id="Email_Id" max="20">
+                    (Enter valid Email_Id)
+                </td>
+            </tr>
+            <tr>
+                <td>MOBILE NUMBER</td>
+                <td><input type="tel" name="Mobile_Number" id="Mobile_Number" maxlength="10" pattern="[0-9]{10}"
+                        placeholder="Enter 10 digit number" required>
+                </td>
+            </tr>
+            <tr>
+                <td>GENDER</td>
+                <td>MALE<input type="radio" name="Gender" id="Male">
+                    FEMALE<input type="radio" name="Gender" id="Female"></td>
+            </tr>
+            <tr>
+                <td>ADDRESS <br><br><br></td>
+                <td><textarea name="Address" id="Address" cols="30" rows="4" required></textarea></td>
+            </tr>
+            <tr>
+                <td>CITY</td>
+                <td><input type="text" name="City" id="City" maxlength="30" required>
+                    (max 30 characters a-z and A-Z)
+                </td>
+            </tr>
+            <tr>
+                <td>PINCODE</td>
+                <td><input type="tel" name="Pincode" id="Pincode" maxlength="6" required>
+                    (6 digit number)
+                </td>
+            </tr>
+            <tr>
+                <td>STATE</td>
+                <td>
+                    <select name="text" id="text">
+                        <option value="">------Select one------</option>
+                        <option value="1" id="ap">Andhar Pradhesh</option>
+                        <option value="2" id="aru">Arunachal Pradesh</option>
+                        <option value="3" id="assam">Assam</option>
+                        <option value="4" id="bihar">Bihar</option>
+                        <option value="5" id="chatti">Chattisgarh</option>
+                        <option value="6" id="Goa">Goa</option>
+                        <option value="7" id="Gujarat">Gujarat</option>
+                        <option value="8" id="haryana">Haryana</option>
+                        <option value="9" id="hm">Himachal Pradesh</option>
+                        <option value="10" id="jar">Jharkhand</option>
+                        <option value="11" id="kar">Karnataka</option>
+                        <option value="12" id="kerala">Kerala</option>
+                        <option value="13" id="mp">Madhya Pradesh</option>
+                        <option value="14" id="Manipur">Manipur</option>
+                        <option value="15" id="mega">Meghalaya</option>
+                        <option value="16">Mizoram</option>
+                        <option value="17">Nagaland</option>
+                        <option value="18">Odisha</option>
+                        <option value="19">Punjab</option>
+                        <option value="20">Rajasthan</option>
+                        <option value="21">Sikkim</option>
+                        <option value="22">Tamil Nandu</option>
+                        <option value="23">Telangana</option>
+                        <option value="24">Tripura</option>
+                        <option value="25">Uttar Pradesh</option>
+                        <option value="26">UttarKhand</option>
+                        <option value="27">West Bengal</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>COUNTRY</td>
+                <td><input type="text" name="Country" id="Country" value="India" readonly="readonly" required></td>
+            </tr>
+            <tr>
+                <td>BLOOD GROUP <br><br><br></td>
+                <td>
+                    A+
+                    <input type="radio" name="BLOOD GROUP" id="A+" value="A+">
+                    A-
+                    <input type="radio" name="BLOOD GROUP" id="A-" value="A-">
+                    B+
+                    <input type="radio" name="BLOOD GROUP" id="B+" value="B+">
+                    B-
+                    <input type="radio" name="BLOOD GROUP" id="B-" value="B-">
+                    O+
+                    <input type="radio" name="BLOOD GROUP" id="O+" value="O+">
+                    O-
+                    <input type="radio" name="BLOOD GROUP" id="O-" value="O-">
+                    AB+
+                    <input type="radio" name="BLOOD GROUP" id="AB+" value="AB+">
+                    BOMBAY BLOOD
+                    <input type="radio" name="Hobby_Bombay Blood" id="Bombay Blood" value="Bombay Blood"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td>ORGAN TYPE <br><br><br></td>
+                <td>
+                    Eyes
+                    <input type="checkbox" name="ORGAN TYPE" id="Eyes" value="Eyes">
+                    Heart
+                    <input type="checkbox" name="ORGAN TYPE" id="Heart" value="Heart">
+                    Lung
+                    <input type="checkbox" name="ORGAN TYPE" id="Lung" value="Lung">
+                    Pancreas
+                    <input type="checkbox" name="ORGAN TYPE" id="Pancreas" value="Pancreas">
+                    Kidney
+                    <input type="checkbox" name="ORGAN TYPE" id="Kidney" value="Kidney">
+                    Small intestine
+                    <input type="checkbox" name="ORGAN TYPE" id="Small intestine" value="Small intestine">
+                    Cornea
+                    <input type="checkbox" name="ORGAN TYPE" id="cornea" value="Cornea">
+                    Bone marrow
+                    <input type="checkbox" name="ORGAN TYPE" id="Bone marrow" value="Bone marrow">
+                    <br>
+                </td>
+
+            </tr>
+            <tr>
+                <td>REFERENCE</td>
+                <td>
+                    ADHAAR NUMBER
+                    <input type="tel" name="Masters_adhar" id="adhaar" maxlength="12" required>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" class="btn" id="submit" value="Submit">
+                    <input type="reset" class="btn" id="reset" value="Reset">
+                    <button type="button" class="btn btn-primary" id="btn"><a href="homepage.html">Back to Home</a>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+<script>
+    function validate() {
+        var first = document.forms["myform"]["First_Name"].value;
+        var last = document.forms["myform"]["Last_Name"].value;
+        var email = document.forms["myform"]["Email_Id"].value;
+        if (first == "") {
+            alert("Enter the first name");
+            return false;
+        }
+        if (!isNaN(first)) {
+            alert("Name in characters");
+            return false;
+        }
+
+        if (last == "") {
+            alert("Enter the last name");
+            return false;
+        }
+        if (!isNaN(last)) {
+            alert("Name in characters");
+            return false;
+        }
+
+        if (email == "") {
+            alert("Enter the email");
+            return false;
+        }
+
+        var at = email.indexOf("@");
+        var dot = email.lastIndexOf(".");
+        if (at < 1 || dot < at + 2 || dot + 2 >= emai.length) {
+            alert("Ivalid Email_Id ");
+            return false;
+        }
+        // var sub = document.forms["myforms"]["submit"].value;
+        // alert("You have Successfully Registered!");
+    }
+</script>
+
+</html>

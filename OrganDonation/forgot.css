@@ -1,0 +1,103 @@
+body {
+    background-image: url(https://thumbs.dreamstime.com/b/money-saving-red-heart-donate-philanthropy-health-care-love-organ-donation-family-insurance-csr-concept-world-160532921.jpg);
+    background-repeat: no-repeat;
+    /* background-size:cover; */
+    background-size: 1300px 600px;
+}
+.fit {
+    color: rgb(41, 92, 92);
+}
+
+.form {
+    color: black;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    text-decoration: solid;
+    color: rgb(151, 7, 7);
+    text-align: center;
+}
+
+label {
+    width: 8%;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+}
+
+button {
+    width: 12%;
+    height: 40px;
+    margin: 20px;
+    border-radius: 60px;
+    background-color: rgb(235, 139, 139);
+    font-size: 17px;
+    text-align: center;
+    position: static;
+    left: 60px;
+    padding: 9px;
+
+}
+button:hover{
+    background-color: lemonchiffon;
+    color:mediumvioletred;
+}
+a{
+    text-align: center;
+}
+a:link {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    
+}
+
+a:hover {
+    color: aqua;
+}
+
+input {
+    border-radius: 60px;
+    text-align: center;
+    width: 17%;
+    padding: 12px;
+    background-color: rgb(142, 199, 243);
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    color: indigo;
+}
+
+::placeholder {
+    font-size: larger;
+    font-style: normal;
+    color:deeppink;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h3 {
+    text-align: center;
+}
+
+footer {
+    /* text-align: right; */
+    padding: 12px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    right: auto;
+    margin-left: 600px;
+}
+p{
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+}

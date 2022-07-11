@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Form</title>
+    <style>
+        body {
+            background-image: url(https://storage.googleapis.com/jacksonh/1/2016-03-04-OrganDonation.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .fit {
+            color: rgb(41, 92, 92);
+        }
+
+        .form {
+            color: black;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-decoration: solid;
+            color: rgb(151, 7, 7);
+            text-align: center;
+        }
+
+        label {
+            width: 8%;
+            display: inline-block;
+        }
+
+        button {
+            width: 12%;
+            height: 40px;
+            margin: 20px;
+            border-radius: 60px;
+            background-color:chartreuse;
+            font-size: 17px;
+            text-align: center;
+            position: static;
+            left: 60px;
+            padding: 9px;
+
+        }
+        a{
+            text-align: center;
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        input {
+            border-radius: 60px;
+            text-align: center;
+            width: 17%;
+            padding: 12px;
+            background-color: rgb(175, 179, 182);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-size: larger;
+            font-style: normal;
+            color:deeppink;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        footer {
+            /* text-align: right; */
+            padding: 12px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: auto;
+            float: rig;
+        }
+        /* .mn{
+            margin-left: 560px;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="fit">
+        <div class="form"><br>
+            <h2>Admin Form</h2><br>
+            <form name="f1" id="f1" action="homepage.html" onsubmit="validate();">
+                <!---  <label for="name" ><b>UserName </b></label> -->
+                <!-- <img src="./Images/user.png" width="30px" height="30px"> -->
+                <input type="text" name="username" id="username" pattern="Team1"
+                    placeholder="Username" required> <br> <br>
+                <!--  <label for="password"><b>Password</b></label> -->
+                <!-- <img src="./Images/pwd.png" width="30px" height="30px"> -->
+                <input type="password" name="Password" id="Password" pattern="Team1@1"
+                    placeholder="Password" required><br><br>
+                <button id="btn">
+                    <b>
+                        <font background-color:red>
+                            <center id="submit">Submit</center><a href="homepage.html"></a> </font>
+                    </b></a>
+                </button>
+            </form>
+        </div>
+    </div>
+</body>
+<!-- <a href="homepage.html" class="mn">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzUsd5lXL7hsB9h8zeFrKdeGpZviLXJvoTHA&usqp=CAU" width="50" height="15"><b>HOME</b>
+</a> -->
+<script language="javascript">
+    function validate() {
+        var user = document.f1.username.value;
+        alert("welcome");
+        alert(user);
+    }
+</script>
+
+</html>

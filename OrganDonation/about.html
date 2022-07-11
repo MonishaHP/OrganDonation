@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+            background-color: cornflowerblue;
+        }
+        .car{
+            display:flex;
+            flex-direction: row;
+            justify-content:left;
+            justify-content:space-evenly;
+        }
+        .box{
+            border: 2px cornflowerblue;
+            height: 250px;
+            width: 350px;
+            margin: 2px;
+            font-size:larger;
+        }
+        .a{
+            background-color: cornflowerblue;
+            color: black;
+        }
+        .kn{
+            background-color: burlywood;
+            font-family: cursive;
+            color: aliceblue;
+        }
+        #a{
+            color: rgb(100, 33, 33);
+            font-style: italic;
+        }
+        .ul{
+            background: url(data:image/jpeg;base64,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) no-repeat right 5px;
+            display: block;
+            background-color: antiquewhite;
+        }
+        .btn:hover:hover{
+            color: blue;
+        }
+        h1,h3{
+            color:brown ;
+        }
+        .btn1:hover{
+            transform: scaleY(1.1);
+        }
+        .nav-item{
+            margin: 80px;
+        }
+        #link{
+            margin-left: 500px;
+        }
+        button{
+            color: blue;
+            padding: 8px 10px;
+            border-radius: 60px;
+            font-size: medium;
+            font-weight: 200;
+            background-color: cyan;
+        }
+        button:hover{
+            color: red;
+            background-color: whitesmoke;
+        }
+        #head{
+            margin-left: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="kn">
+        <h1 id="head">About Us<a id="link" href="homepage.html"><button id="btn">Back</button></a></h1>
+        <div><h2 class="btn"> &nbsp; Organ donation saves and improves thousands of lives each year, with even more lives improved by tissue donation.</h2></div>
+    </div>
+    <div class="a">
+        <div class="car">
+            <div class="btn1"><img src="https://www.sakraworldhospital.com/spl_splimgs/organ%20donation-2020-1.jpg" width="750px" height="400px">
+            </div>
+            <div class="box">
+                <h2 id="a">ORGAN DONATION:</h2>
+                 <p>Organ donation is the act of giving an organ to save or improve the life of someone who needs a transplant.
+                    <br> You are able to donate some organs while you are alive, for example; a kidney, or part of your liver. However, most organ and tissue donations will come from people who have died.
+                    <br> Anyone can register a decision to donate their organs and tissue when they die, regardless of their age or medical conditions. To ensure that all donated organs are safe, the donor's medical and lifestyle history is assessed at the time of donation.</p></div>
+                </div><br><br>
+            <div>
+                <nav class="ul">
+                    <ul><h3>Team Members : Junior Executive-IT in ITC Infotech</h3>
+                    <li>Golla Balaraju : BSc-Completed course of Manual Testing,Projects-Solar panel based on the street lights.</li>
+                    <li>Bellam Sreelatha : Bsc-Completed course of Web Technology,Projects-Shifa Hospital.</li>
+                    <li>Geetha A : BCA-Projects-ocean Wonder.</li>
+                    <li>Monisha P : BCA-Completed course of Java Full Developer,Projects-Jewellery Management and Manju Cab Booking.</li>
+                    <li>Sridhar : BCom(CA)-Completed course of Manual Testing.</li>
+                    <li>Sagar : BCA-Completed Course of Python,Projects-Vehicle recognition system.</li>
+                </ul></a>
+               </nav>
+            </div>
+    </div>
+</body>
+</html>

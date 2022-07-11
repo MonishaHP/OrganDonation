@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            background-image: url(https://media.istockphoto.com/photos/a-jar-of-heart-tree-growing-on-money-coins-social-responsibility-and-picture-id1124598487?k=20&m=1124598487&s=170667a&w=0&h=hmpw_rCirNt7Srjk8fS_xZz-11k7qdUa_ldxBTa57-g=);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .fit {
+            color: rgb(41, 92, 92);
+        }
+
+        .form {
+            color: black;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 40px;
+            text-decoration: solid;
+            color: rgb(151, 7, 7);
+            text-align: center;
+        }
+
+        label {
+            width: 8%;
+            display: inline-block;
+        }
+
+        button {
+            width: 12%;
+            height: 40px;
+            margin: 20px;
+            border-radius: 60px;
+            background-color: rgb(234, 81, 81);
+            font-size: 17px;
+            text-align: center;
+            position: static;
+            left: 60px;
+            padding: 9px;
+
+        }
+        a{
+            text-align: center;
+        }
+        a:link {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+            
+        }
+
+        a:hover {
+            color: aqua;
+        }
+
+        input {
+            border-radius: 60px;
+            text-align: center;
+            width: 17%;
+            padding: 12px;
+            background-color: rgb(175, 179, 182);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        ::placeholder {
+            font-size: larger;
+            font-style: normal;
+            color:deeppink;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h3 {
+            text-align: center;
+        }
+
+        footer {
+            /* text-align: right; */
+            padding: 12px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            right: auto;
+            margin-left: 600px;
+        }
+        p{
+            text-align: center;
+            position: relative;
+            font-size: 20px;
+        }
+        .mn{
+            margin-left: 580px;
+        }
+        input{
+             margin-left: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fit">
+        <!-- <p>Welcome</p> -->
+        <br><br><br>
+        <h1>ORGAN DONATION</h1>
+        <div class="form" id="header"><br>
+            <h2>Login Form</h2><br>
+            <form name="f1" id="f1" action="homepage.html" onsubmit="validate();">
+                <!---  <label for="name" ><b>UserName </b></label> -->
+                <img src="data:image/png;base64,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" width="30px" height="30px" >
+                <input type="text" name="username" id="Username" pattern="[a-z,A-Z,0-9]{8,16}"
+                    title="username should consist of combination of upper & lower case letters : (min & max range :8-16)"
+                    placeholder="Username" required> <br> <br>
+                <!--  <label for="password"><b>Password</b></label> -->
+                <img src="data:image/png;base64,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" width="30px" height="30px">
+                <input type="password" name="Password" id="Password" pattern="[a-z,A-Z,0-9]{8,16}"
+                    title="Password should consist of combination of upper & lower case letters and numerical (min & max range :8-16)"
+                    placeholder="Password" required><br>
+
+                <button id="submit">
+                    <b>
+                        <font background-color:red>
+                            <center id="submit">Submit</center><a href="homepage.html" </font>
+                    </b></a>
+                </button><br>
+                <b><a href="forgot.html">Forgot Password?</a></b>
+                    <b><p>New User.?<a id="account" href="register1.html">Create an Account?</a></p></b>
+            </form>
+        </div>
+    </div>
+</body>
+    <!-- <a href="homepage.html" class="mn">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzUsd5lXL7hsB9h8zeFrKdeGpZviLXJvoTHA&usqp=CAU" width="50" height="15"><b>HOME</b>
+    </a> -->
+<script language="javascript">
+    function validate() {
+        var user = document.f1.username.value;
+        alert("Welcome");
+        alert(user);
+        alert("You are Successfully login to the Organ Donation!");
+    }
+</script>
+
+</html>

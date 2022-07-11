@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: montserrat;
+    background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc7f2vQqXUjDJ9_h-tCDLyNBG_VAOfTHFgkmHSaPk4MN_89zspdZoMcNldNpi60NtXbUI&usqp=CAU);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    padding: 15px 10px;
+    border-radius: 5px;
+}
+.container .title{
+    font-size: 25px;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 5px;
+   
+}
+.container .title::before{
+    content: ' ';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 131px;
+    margin-top: 15px;
+}
+.container form .user_details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+form .user_details .input_box{
+    margin: 12px 0 12px 0;
+    width: calc(100% /2 - 20px);
+}
+.user_details .input_box .details{
+    display: flex;
+    font-size:x-large;
+    color:rgb(129, 37, 3);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.user_details .input_box input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+}
+.user_details .input_box input :valid{
+    border-color: #8d8b8b;
+}
+.gender_details p{
+    margin-bottom: -18px;
+    font-size: large;
+}
+.gender_details input {
+    align-items: center;
+    margin-left: 120px;
+}
+.button input{
+    width: 20%;
+    height: 50px;
+    border: 1px solid;
+    background: #d7d2d2;
+    border-radius: 25px;
+    font-size: 18px;
+    color: #a3aaad;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    margin-top: 20px;
+}
+.button input{
+    color: black;
+    text-decoration: none;
+}
+.button input:hover{
+    border-color:azure;
+    color: aqua;
+    background-color:coral;
+}
